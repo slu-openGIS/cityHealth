@@ -12,6 +12,18 @@ The original 2016 and 2017 data are in the public domain and easily downloaded f
 
 `cityHealth` provides "tidy" versions of the CDC's data in a format readily accessible to `R` at a fraction of the footprint. One way this is acheived is by removing metadata from each observation that is more economically stored in an alternate format. Thus the tables available in `cityHealth` are not identical to the [raw data](https://chronicdata.cdc.gov/500-Cities/500-Cities-Local-Data-for-Better-Health-2017-relea/6vp6-wxuq) available from the CDC.
 
+### Data
+
+`cityHealth` contains the following data:
+
+-   `cdc_sf_tracts` - tract boundaries clipped to city boundaries
+-   `cdc_tbl_state16` - state estimates, 2016
+-   `cdc_tbl_state17` - state estimates, 2017
+-   `cdc_tbl_tract16` - state estimates, 2016
+-   `cdc_tbl_tract17` - state estimates, 2017
+-   `cdc_tbl_us16` - United States estimates, 2016
+-   `cdc_tbl_us17` - United States estimates, 2017
+
 ### Contributor Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

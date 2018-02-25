@@ -29,7 +29,13 @@ The original 2016 and 2017 data are in the public domain and easily downloaded f
 ### Data
 `cityHealth` contains the following data:
 
-
+* `cdc_sf_tracts` - tract boundaries clipped to city boundaries
+* `cdc_tbl_state16` - state estimates, 2016
+* `cdc_tbl_state17` - state estimates, 2017
+* `cdc_tbl_tract16` - state estimates, 2016
+* `cdc_tbl_tract17` - state estimates, 2017
+* `cdc_tbl_us16` - United States estimates, 2016
+* `cdc_tbl_us17` - United States estimates, 2017
 
 ### Contributor Code of Conduct
 Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
