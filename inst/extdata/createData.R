@@ -9,12 +9,14 @@ fullData16 <- read_csv("/Users/chris/Downloads/500_Cities__Local_Data_for_Better
 
 ## create us data set, 2016
 usData16 <- filter(fullData16, GeographicLevel == "US")
-attributes(usData16) <- NULL
 usData16 %>%
   as_tibble() %>%
   select(Year, Category, Data_Value_Type, Data_Value, Data_Value_Footnote, Low_Confidence_Limit,
          High_Confidence_Limit, Short_Question_Text) %>%
   clean_names() -> usData16
+
+attr(usData16,'spec') <- NULL
+
 use_data(usData16, overwrite = TRUE)
 
 # create full 2017 data from raw - needs to be available in the downloads
