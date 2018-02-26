@@ -41,7 +41,8 @@ ch_tbl_city16 %>%
     estimate = data_value,
     estimate_ci_low = low_confidence_limit,
     estimate_ci_high = high_confidence_limit,
-    question = short_question_text
+    question = short_question_text,
+    note = data_value_footnote
   ) %>%
   arrange(state_abbr, city, category, question, estimate_type) -> ch_tbl_city16
 
@@ -62,7 +63,8 @@ ch_tbl_tract16 %>%
     estimate = data_value,
     estimate_ci_low = low_confidence_limit,
     estimate_ci_high = high_confidence_limit,
-    question = short_question_text
+    question = short_question_text,
+    note = data_value_footnote
   ) %>%
   arrange(state_abbr, city, category, question, tract_fips) -> ch_tbl_tract16
 
@@ -107,7 +109,8 @@ ch_tbl_city17 %>%
     estimate = data_value,
     estimate_ci_low = low_confidence_limit,
     estimate_ci_high = high_confidence_limit,
-    question = short_question_text
+    question = short_question_text,
+    note = data_value_footnote
   ) %>%
   arrange(state_abbr, city, category, question, estimate_type) -> ch_tbl_city17
 
@@ -128,7 +131,8 @@ ch_tbl_tract17 %>%
     estimate = data_value,
     estimate_ci_low = low_confidence_limit,
     estimate_ci_high = high_confidence_limit,
-    question = short_question_text
+    question = short_question_text,
+    note = data_value_footnote
   ) %>%
   arrange(state_abbr, city, category, question, tract_fips) -> ch_tbl_tract17
 
