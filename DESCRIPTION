@@ -1,12 +1,22 @@
 Package: cityHealth
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Provides Tidy Versions of the CDC's 500 Cities Project Data
 Version: 0.1.0
-Author: Who wrote it
+Authors@R: person("Christopher", "Prener", email = "chris.prener@slu.edu",
+                  role = c("aut", "cre"))
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Working with the original 500 Cities Project data present a number of practical 
+    challenges. Each release is nearly 228 megabytes in size (approaching half a gigabyte 
+    for both together). The full releases contain data from multiple observational units as
+    well as numerous variables that contain metadata that can be stored more efficiently in
+    other formats. cityHealth provides "tidy" versions of the CDC's data in a format readily 
+    accessible to R at a fraction of the footprint. 
+Depends: R (>= 3.3.3)
 License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
+Suggests: sf,
+    ggplot2,
+    dplyr
+Imports: tibble
