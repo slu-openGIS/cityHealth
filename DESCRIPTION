@@ -11,7 +11,7 @@ Description: Working with the original 500 Cities Project data present a number 
     well as numerous variables that contain metadata that can be stored more efficiently in
     other formats. cityHealth provides "tidy" versions of the CDC's data in a format readily 
     accessible to R at a fraction of the footprint. 
-Depends: R (>= 3.3.3)
+Depends: R (>= 3.3)
 License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
